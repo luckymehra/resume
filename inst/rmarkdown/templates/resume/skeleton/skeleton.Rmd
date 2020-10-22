@@ -49,23 +49,42 @@ experience:
     description: Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system. Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. 
     continue:
     
-outside-work:
+publications:
   - title: R package resume
-    accomplishment: (https://github.com/JacekPardyak/resume)
+    description: something
     continue: true  
   - title: Python script
-    accomplishment: for daring attitude (http://bit.ly/2aNdf6D)
+    description: for daring attitude (http://bit.ly/2aNdf6D)
     continue:
 
-referee:
-  - full_name: Jon Doe
-    job_title: Department Director
-    current_contact_details: (+31) 567 432 222 
+teaching:
+  - title: lorem
+    description: description of teaching
     continue: true
-  - full_name: Forrest Gump
-    job_title: Partner
-    current_contact_details: (+48) 567 432 222 
+  - title: lorem
+    description: description of teaching
     continue: 
+    
+awards:
+  - title:
+    description:
+    continue:
+  - title:
+    description:
+    continue:
+      
+certifications:
+  - title: 1.
+    description: certification 1
+    continue: true
+  - title: 2.
+    description: certification 2
+    continue: 
+      
+note: >
+  note
+  
+
     
 preamble: >
   \usepackage{amsmath}

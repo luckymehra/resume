@@ -13,7 +13,7 @@
 
 \begin{document} 
  
-\name{$name$} 
+\name{\LARGE{$name$}} 
 \address{$if(contact.address)$$contact.address$\\$endif$$if(contact.telephone)$Tel: $contact.telephone$$endif$}        
 \address{$if(contact.email)$E-mail: $contact.email$$endif$$if(contact.url)$\\ URL: $contact.url$$endif$$if(contact.extra)$$contact.extra$$endif$}
   
@@ -29,36 +29,43 @@ $for(skills)$
     \textbf{$skills.category$}: $skills.list$$if(skills.continue)$\\$endif$
 $endfor$
 
-\section{EDUCATION} 
+\section{CERTIFICATIONS*}  
 
-$for(education)$
-    \textbf{\uppercase{$education.school$}} \emph{$education.title$}, $education.field$ ($education.year$)\\ $education.notes$ $if(education.continue)$\\$endif$
+$for(certifications)$
+\textbf{$certifications.title$} $certifications.description$$if(certifications.continue)$\\$endif$
 $endfor$
 
-  
-\section{RECENT WORK EXPERIENCE}
+\section{WORK EXPERIENCE}
 $for(experience)$
     \textbf{\uppercase{$experience.employer$}}, $experience.city$ \\ \emph{$experience.position$} ($experience.period$)\\ $experience.description$ $if(experience.continue)$\\$endif$
 $endfor$
 
-
-\section{OUTSIDE WORK ACCOMPLISHMENTS}  
-$for(outside-work)$
-\textbf{$outside-work.title$} $outside-work.accomplishment$$if(outside-work.continue)$\\$endif$
+\section{EDUCATION} 
+$for(education)$
+    \textbf{\uppercase{$education.school$}} \emph{$education.title$}, $education.field$ ($education.year$)\\ $education.notes$ $if(education.continue)$\\$endif$
 $endfor$
 
-\section{REFEREES}  
-
-$for(referee)$
-\textbf{\uppercase{$referee.full_name$}} \emph{$referee.job_title$} $referee.current_contact_details$$if(referee.continue)$\\$endif$
+\section{SELECTED PUBLICATIONS*}  
+$for(publications)$
+\textbf{$publications.title$} $publications.description$$if(publications.continue)$\\$endif$
 $endfor$
+
+\section{TEACHING EXPERIENCE*}  
+
+$for(teaching)$
+\textbf{$teaching.title$} $teaching.description$$if(teaching.continue)$\\$endif$
+$endfor$
+
+\section{AWARDS*}  
+
+$for(awards)$
+\textbf{$awards.title$} $awards.description$$if(awards.continue)$\\$endif$
+$endfor$
+
+\textbf{$note$}
 
 
 \end{resume}
 \end{document}
-
-
-
-
 
 
